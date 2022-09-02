@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="box"></div>
+    <script>
+//  FIRST INPUT
+    let userResponse = prompt("What's your first number?");
+// isNaN (is not a number)
+    if (!(isNaN(userResponse))) {
+        console.log ("It's a number")
+    }
+    else 
+    alert ("Your input should only be a number. Please restart");
+
+// CHOOSE OPERATOR
+   // operations +, -, *, / 
+   let operator = prompt("Input operator: ");
+    console.log ("Operator: " + operator);
+
+//  Integer
+     userResponse = parseInt (userResponse);
+
+// SECOND INPUT
+     let userResponse2 = prompt("What's your second number?");
+        // isNaN (is not a number)
+     if (!(isNaN(userResponse2))) {
+        console.log ("It's a number")
+    }
+    else 
+    alert ("Your input should only be a number. Please restart");
+    
+//  Integer
+    userResponse2 = parseInt (userResponse2);
+
+// OPERATOR
+     if (operator == "+") {
+        var sum = userResponse+userResponse2;
+        var element = document.querySelector (".box");
+     element.innerHTML="Your answer is: " + sum; }
+        
+
+        else if (operator == "-") {
+        var difference =userResponse-userResponse2;
+        var element = document.querySelector (".box");
+     element.innerHTML="Your answer is: " + difference; }
+
+        else if (operator == "*") {
+        var product =userResponse*userResponse2
+        var element = document.querySelector (".box");
+     element.innerHTML="Your answer is: " + product;}
+
+        else if (operator == "/") {
+        var quotient =userResponse/userResponse2
+        var element = document.querySelector (".box");
+     element.innerHTML="Your answer is: " + quotient;}
+
+        else {alert ("Please input a correct an operator")};
+
+
+    </script>
+
+
+</body>
+</html>
